@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <title> Store Management System</title>
+        <style>
+            body{
+                background-image: url(abs3.jpg);
+            }
+            
+            input[type=text], select {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 30%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+div {
+    border-radius: 5px;
+    background-color: black;
+    opacity: 0.7;
+    border: 2px solid white;
+    border-radius: 30px;
+    padding: 20px;
+    width: 30%;
+    
+}
+
+ p{
+                color:white;
+                text-align: center;
+                font-family: monospace;
+                font-size: 40px;
+                border: 1px solid white;
+                padding: 10px;
+            }
+            
+            
+            label{
+                color:white;
+                text-align: left;
+            }
+        </style>
+    <p> <strong>UPDATE YOUR STOCK PRICE </strong></p>
+    </head>
+    <body>
+    <center>
+    <div>
+       
+        <form action="Update" method="post">
+            
+    <label for="itemno">Item Number</label>
+    <br><br>
+    <input type="text" id="itemno" name="itemno" placeholder="Enter Your Item Number">
+    <br><br>
+    <label for="rate">Desired Price</label>
+    <br><br>
+    <input type="text" id="rate" name="price" placeholder="Your Desired Price">
+    
+  </div>
+        <br>
+        <br>
+        
+    <input type="submit" value="UPDATE">
+  </form>
+</center>
+
+        
+        
+        
+    </body>
+</html>

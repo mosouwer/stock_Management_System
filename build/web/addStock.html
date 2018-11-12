@@ -1,0 +1,103 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Store Management System</title>
+        <style>
+            body{
+                background-image: url(abs3.jpg);
+            }
+            
+            input[type=text], select {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 30%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+div {
+    
+    background-color: black;
+    opacity: 0.7;
+    border: 2px solid white;
+    
+    padding: 20px;
+    width: 30%;
+    
+}
+
+ p{
+                color:white;
+                text-align: center;
+                font-family: monospace;
+                font-size: 40px;
+                border: 1px solid white;
+                padding: 10px;
+                border-radius: 25px;
+            }
+            
+            
+            label{
+                color:white;
+                text-align: left;
+            }
+        </style>
+    <p> <strong>ADD PRODUCTS TO INVENTORY </strong></p>
+    </head>
+    <body>
+    <center>
+    <div>
+       
+        <form action="addstock" method="post">
+            
+    <label for="itemno">Product Article</label>
+    <br><br>
+    <input type="text" id="itemno" name="itemnumber" placeholder="Product Article">
+    <br><br>
+    <label for="iname">Product Name</label>
+    <br><br>
+    <input type="text" id="lname" name="itemname" placeholder="Product Name">
+      <br><br>
+    <label for="quan">Quantity</label>
+    <br><br>
+    <input type="text" id="quan" name="quan" placeholder="Quantity">
+      <br><br>
+    <label for="supp">Supplier</label>
+    <br><br>
+    <input type="text" id="supp" name="supp" placeholder="Supplier">
+      <br><br>
+    <label for="rate">Rate</label>
+    <br><br>
+    <input type="text" id="rate" name="rate" placeholder="Rate">
+    
+  </div>
+        <br>
+        <br>
+        
+    <input type="submit" value="Add Product">
+  </form>
+</center>
+
+        
+        
+        
+    </body>
+</html>

@@ -25,7 +25,7 @@ public class emptycart extends HttpServlet {
                  Class.forName("com.mysql.jdbc.Driver");  
                 Connection c=DriverManager.getConnection(  
                         "jdbc:mysql://localhost:3306/mysql","root","");  
-                        PreparedStatement p=c.prepareStatement("delete from cart");
+                        PreparedStatement p=c.prepareStatement("delete from the cart");
                         p.executeUpdate();
                         response.sendRedirect("Cart.jsp");
                         
